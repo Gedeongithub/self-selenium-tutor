@@ -103,5 +103,9 @@ public class HomePage {
         driver.get("https://www.selenium.dev/selenium/web/mouse_interaction");
         return new DoubleClickPage(driver);
     }
+    public ScrollPage openScrollPage(){
+        driver.get("https://www.selenium.dev/selenium/web/overflow/x_auto_y_scroll.html");
+        return new ScrollPage(driver);
+    }
 
 }
