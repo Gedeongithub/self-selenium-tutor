@@ -20,4 +20,12 @@ public class DoubleClickPage {
         wait.until(ExpectedConditions.visibilityOf(result));
         System.out.println(result.getText());
     }
+    public void rightClick(){
+        var result = driver.findElement(By.id("click-status"));
+        var element = driver.findElement(By.id("clickable"));
+        new Actions(driver).contextClick(element).perform();
+        var wait = new WebDriverWait(driver, Duration.ofSeconds(2));
+        wait.until(ExpectedConditions.visibilityOf(result));
+        System.out.println(result.getText());
+    }
 }
