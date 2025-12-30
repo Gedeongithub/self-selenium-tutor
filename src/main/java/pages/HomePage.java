@@ -99,4 +99,9 @@ public class HomePage {
         return new HoverPage(driver);
     }
 
+    public DoubleClickPage openDoubleClickPage(){
+        driver.get("https://www.selenium.dev/selenium/web/mouse_interaction");
+        return new DoubleClickPage(driver);
+    }
+
 }
