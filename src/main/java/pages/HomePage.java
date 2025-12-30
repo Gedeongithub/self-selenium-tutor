@@ -113,4 +113,9 @@ public class HomePage {
         return new LongPage(driver);
     }
 
+    public DraggingPage OpenDraggingPage(){
+        driver.get("https://www.selenium.dev/selenium/web/draggableLists.html");
+        return new DraggingPage(driver);
+    }
+
 }
