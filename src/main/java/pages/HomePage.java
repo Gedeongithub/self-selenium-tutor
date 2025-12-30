@@ -108,4 +108,9 @@ public class HomePage {
         return new ScrollPage(driver);
     }
 
+    public LongPage openLongPage(){
+        driver.get("https://www.selenium.dev/selenium/web/scrolling_tests/page_with_tall_frame.html");
+        return new LongPage(driver);
+    }
+
 }
