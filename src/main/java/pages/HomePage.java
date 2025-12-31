@@ -118,4 +118,9 @@ public class HomePage {
         return new CopypastePage(driver);
     }
 
+    public KeysPage openKeysPage(){
+        driver.get("https://www.selenium.dev/selenium/web/keyboard_shortcut.html");
+        return new KeysPage(driver);
+    }
+
 }
