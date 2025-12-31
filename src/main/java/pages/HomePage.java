@@ -27,11 +27,6 @@ public class HomePage {
         return new FormPage(driver);
     }
 
-
-
-
-
-
     //Method to click any given link
     private void clickLink(String locator) {
 
@@ -116,6 +111,11 @@ public class HomePage {
     public DraggingPage OpenDraggingPage(){
         driver.get("https://www.selenium.dev/selenium/web/draggableLists.html");
         return new DraggingPage(driver);
+    }
+
+    public CopypastePage openCopypastePage(){
+        driver.get("https://www.selenium.dev/selenium/web/formPage.html");
+        return new CopypastePage(driver);
     }
 
 }
